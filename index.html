@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player UI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="player-card">
+
+    <!-- Now Playing -->
+    <div class="now-playing">
+        <img id="currentImage" 
+             src="https://i.imgur.com/Z6XQZ6E.jpg" 
+             alt="Album Art">
+        <h3 id="currentTitle">Roja</h3>
+        <p>A. R. Rahman</p>
+    </div>
+
+    <!-- Progress -->
+    <div class="progress-container">
+        <span>1:12</span>
+        <div class="progress-bar">
+            <div class="progress"></div>
+        </div>
+        <span>4:05</span>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+        <button>⏮</button>
+        <button class="play">▶</button>
+        <button>⏭</button>
+    </div>
+
+    <!-- Extras -->
+    <div class="extras">
+        <span>❤️</span>
+        <input type="range" min="0" max="100">
+        <span>🔊</span>
+    </div>
+
+    <!-- Albums -->
+    <div class="albums">
+        <h4>Albums</h4>
+
+        <div class="album-list">
+            <div class="album active" 
+                 data-title="Roja" 
+                 data-img="C:\Users\LENOVO\OneDrive\Desktop\web\music player\roja.jpg">
+                <img src="C:\Users\LENOVO\OneDrive\Desktop\web\music player\roja.jpg">
+                <span>Roja</span>
+            </div>
+
+            <div class="album" 
+                 data-title="Bombay" 
+                 data-img="C:\Users\LENOVO\OneDrive\Desktop\web\music player\bombay.webp">
+                <img src="C:\Users\LENOVO\OneDrive\Desktop\web\music player\bombay.webp">
+                <span>Bombay</span>
+            </div>
+
+            <div class="album" 
+                 data-title="Dil Se" 
+                 data-img="C:\Users\LENOVO\OneDrive\Desktop\web\music player\dilse.webp">
+                <img src="C:\Users\LENOVO\OneDrive\Desktop\web\music player\dilse.webp">
+                <span>Dil Se</span>
+            </div>
+
+            <div class="album" 
+                 data-title="Guru" 
+                 data-img="C:\Users\LENOVO\OneDrive\Desktop\web\music player\guru.webp">
+                <img src="C:\Users\LENOVO\OneDrive\Desktop\web\music player\guru.webp">
+                <span>Guru</span>
+            </div>
+
+            <div class="album" 
+                 data-title="Rockstar" 
+                 data-img="C:\Users\LENOVO\OneDrive\Desktop\web\music player\rockstar.webp">
+                <img src="C:\Users\LENOVO\OneDrive\Desktop\web\music player\rockstar.webp">
+                <span>Rockstar</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
